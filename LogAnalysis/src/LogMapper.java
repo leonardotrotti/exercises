@@ -13,6 +13,10 @@ public class LogMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 	throws IOException, InterruptedException {
 		
 		String line = value.toString();
+	
+		// to be changed
+		
+		
 		
 		
 		if (line.contains("ERROR")) {
