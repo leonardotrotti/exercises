@@ -9,12 +9,12 @@ public class LogReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
   @Override
         public void reduce(Text key, Iterable<IntWritable> values, Context context)
                         throws IOException, InterruptedException {
-                int wordCount = 0;
+                int count = 0;
 
                 for (IntWritable value : values) {
 
-                        wordCount += value.get();
+                        count += value.get();
                 }
-                context.write(key, new IntWritable(wordCount));
+                context.write(key, new IntWritable(count));
         }
 }
