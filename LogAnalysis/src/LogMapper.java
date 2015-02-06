@@ -14,9 +14,7 @@ public class LogMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 		
 		String line = value.toString();
 	
-		// to be changed
-		
-		
+		// to be changed in a case statment
 		
 		
 		if (line.contains("ERROR")) {
